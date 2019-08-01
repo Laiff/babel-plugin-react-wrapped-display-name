@@ -8,7 +8,7 @@ after_success:
   - hash npx 2> /dev/null && npx codecov
 deploy:
   provider: npm
-  email: remcohaszing@gmail.com
+  email: q.laiff@gmail.com
   api_key: $NPM_ACCESS_TOKEN
   on:
     tags: true
