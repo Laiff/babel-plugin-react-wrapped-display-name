@@ -1,4 +1,6 @@
 const React = require('react');
 
-const Name = React.memo(() => null);
-Name.displayName = "Memo(Name)";
+const Name = (_temp => {
+  _temp.displayName = "Memo(Name)";
+  return _temp;
+})(React.memo(() => null));
