@@ -1,3 +1,6 @@
 import { memo } from 'react';
-const Name = memo(() => null);
-Name.displayName = "Memo(Name)";
+
+const Name = (_temp => {
+  _temp.displayName = "Memo(Name)";
+  return _temp;
+})(memo(() => null));
